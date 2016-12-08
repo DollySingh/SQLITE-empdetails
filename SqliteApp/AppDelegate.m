@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <sqlite3.h>
 
 @interface AppDelegate ()
 
@@ -17,8 +18,55 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self createdatabase];
     return YES;
 }
+
+-(void)createdatabase
+{
+    
+   NSArray *dir=  NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *dbpath=[NSString stringWithFormat:@"%@/Mydb.sqlite",[dir lastObject]];
+    NSLog(@"%@",dbpath);
+    
+    NSFileManager *f=[[NSFileManager alloc]init];
+    if([f fileExistsAtPath:dbpath])
+    {
+        NSLog(@"database alreay present");
+        return;
+    }
+    
+    sqlite3 *db;
+    
+    if( sqlite3_open([dbpath UTF8String], &db)==SQLITE_OK)
+   {
+       
+       const char * query=" create table employee (empid integer , empname varchar(20),empaddress varchar(20),empphoneno integer)";
+
+       if(sqlite3_exec(db,query,NULL,NULL,NULL)==SQLITE_OK)
+       {
+           NSLog(@"table created");
+       }
+       else
+       {
+           NSLog(@"fail to create table");
+       }
+       
+   }
+    else
+    {
+        NSLog(@"fail to open database");
+    }
+    
+    sqlite3_close(db);
+    
+    
+}
+
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

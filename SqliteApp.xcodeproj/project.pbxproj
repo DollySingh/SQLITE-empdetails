@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		5A4A31DB1DB0DE8F00AF251E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A31DA1DB0DE8F00AF251E /* main.m */; };
 		5A4A31DE1DB0DE8F00AF251E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A31DD1DB0DE8F00AF251E /* AppDelegate.m */; };
-		5A4A31E11DB0DE8F00AF251E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A31E01DB0DE8F00AF251E /* ViewController.m */; };
 		5A4A31E41DB0DE8F00AF251E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4A31E21DB0DE8F00AF251E /* Main.storyboard */; };
 		5A4A31E61DB0DE8F00AF251E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A4A31E51DB0DE8F00AF251E /* Assets.xcassets */; };
 		5A4A31E91DB0DE8F00AF251E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4A31E71DB0DE8F00AF251E /* LaunchScreen.storyboard */; };
 		5A4A31F41DB0DE9000AF251E /* SqliteAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A31F31DB0DE9000AF251E /* SqliteAppTests.m */; };
 		5A4A31FF1DB0DE9000AF251E /* SqliteAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4A31FE1DB0DE9000AF251E /* SqliteAppUITests.m */; };
+		5A55EC391DB0E0C00065DAD4 /* FirstTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A55EC381DB0E0C00065DAD4 /* FirstTableViewController.m */; };
+		5A55EC3C1DB0E0CF0065DAD4 /* SeconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A55EC3B1DB0E0CF0065DAD4 /* SeconViewController.m */; };
+		5A55EC3F1DB0E0DA0065DAD4 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A55EC3E1DB0E0DA0065DAD4 /* ThirdViewController.m */; };
+		5A55EC411DB0E1050065DAD4 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A55EC401DB0E1050065DAD4 /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +42,6 @@
 		5A4A31DA1DB0DE8F00AF251E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5A4A31DC1DB0DE8F00AF251E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5A4A31DD1DB0DE8F00AF251E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5A4A31DF1DB0DE8F00AF251E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5A4A31E01DB0DE8F00AF251E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5A4A31E31DB0DE8F00AF251E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A4A31E51DB0DE8F00AF251E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A4A31E81DB0DE8F00AF251E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,13 @@
 		5A4A31FA1DB0DE9000AF251E /* SqliteAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqliteAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A4A31FE1DB0DE9000AF251E /* SqliteAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqliteAppUITests.m; sourceTree = "<group>"; };
 		5A4A32001DB0DE9000AF251E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A55EC371DB0E0C00065DAD4 /* FirstTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTableViewController.h; sourceTree = "<group>"; };
+		5A55EC381DB0E0C00065DAD4 /* FirstTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTableViewController.m; sourceTree = "<group>"; };
+		5A55EC3A1DB0E0CF0065DAD4 /* SeconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeconViewController.h; sourceTree = "<group>"; };
+		5A55EC3B1DB0E0CF0065DAD4 /* SeconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeconViewController.m; sourceTree = "<group>"; };
+		5A55EC3D1DB0E0DA0065DAD4 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		5A55EC3E1DB0E0DA0065DAD4 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		5A55EC401DB0E1050065DAD4 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A55EC411DB0E1050065DAD4 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,7 @@
 		5A4A31CD1DB0DE8F00AF251E = {
 			isa = PBXGroup;
 			children = (
+				5A55EC401DB0E1050065DAD4 /* libsqlite3.0.tbd */,
 				5A4A31D81DB0DE8F00AF251E /* SqliteApp */,
 				5A4A31F21DB0DE9000AF251E /* SqliteAppTests */,
 				5A4A31FD1DB0DE9000AF251E /* SqliteAppUITests */,
@@ -103,8 +113,12 @@
 			children = (
 				5A4A31DC1DB0DE8F00AF251E /* AppDelegate.h */,
 				5A4A31DD1DB0DE8F00AF251E /* AppDelegate.m */,
-				5A4A31DF1DB0DE8F00AF251E /* ViewController.h */,
-				5A4A31E01DB0DE8F00AF251E /* ViewController.m */,
+				5A55EC371DB0E0C00065DAD4 /* FirstTableViewController.h */,
+				5A55EC381DB0E0C00065DAD4 /* FirstTableViewController.m */,
+				5A55EC3A1DB0E0CF0065DAD4 /* SeconViewController.h */,
+				5A55EC3B1DB0E0CF0065DAD4 /* SeconViewController.m */,
+				5A55EC3D1DB0E0DA0065DAD4 /* ThirdViewController.h */,
+				5A55EC3E1DB0E0DA0065DAD4 /* ThirdViewController.m */,
 				5A4A31E21DB0DE8F00AF251E /* Main.storyboard */,
 				5A4A31E51DB0DE8F00AF251E /* Assets.xcassets */,
 				5A4A31E71DB0DE8F00AF251E /* LaunchScreen.storyboard */,
@@ -270,9 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A4A31E11DB0DE8F00AF251E /* ViewController.m in Sources */,
 				5A4A31DE1DB0DE8F00AF251E /* AppDelegate.m in Sources */,
+				5A55EC3F1DB0E0DA0065DAD4 /* ThirdViewController.m in Sources */,
 				5A4A31DB1DB0DE8F00AF251E /* main.m in Sources */,
+				5A55EC391DB0E0C00065DAD4 /* FirstTableViewController.m in Sources */,
+				5A55EC3C1DB0E0CF0065DAD4 /* SeconViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SqliteApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Felix-Madhuri.SqliteApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SqliteApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Felix-Madhuri.SqliteApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +516,7 @@
 				5A4A32051DB0DE9000AF251E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A4A32061DB0DE9000AF251E /* Build configuration list for PBXNativeTarget "SqliteAppTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +525,7 @@
 				5A4A32081DB0DE9000AF251E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A4A32091DB0DE9000AF251E /* Build configuration list for PBXNativeTarget "SqliteAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +534,7 @@
 				5A4A320B1DB0DE9000AF251E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
